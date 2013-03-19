@@ -25,7 +25,7 @@ module Spree
         end
 
         def sign_in
-          @user = Spree::User.find_by_email('a@a.com')
+          @user = Spree::User.find_by_email(params[:user][:email])
           if !@user.present? || !@user.valid_password?(params[:user][:password])
             unauthorized
             return 
