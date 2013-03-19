@@ -10,7 +10,8 @@ gem 'sqlite3'
 gem 'pg'
 
 gem 'spree_i18n', :git => 'git://github.com/spree/spree_i18n.git'
-gem 'spree_rest_auth', :path => 'vendor/extensions/spree_rest_auth'
+# gem 'spree_rest_auth', :path => 'vendor/extensions/spree_rest_auth'
+gem 'spree_antifake_qr', :path => 'vendor/extensions/spree_antifake_qr'
 
 # Gems used only for assets and not required
 # in production environments by default.
